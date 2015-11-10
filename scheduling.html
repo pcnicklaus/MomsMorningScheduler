@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mom's Morning Scheduler</title>
+
+    <!-- CSS -->
+    <!-- load Bootstrap and custom style.css -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS -->
+    <!-- load Angular, Firebase, Firebase Angular Library, and custom app.js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-app="scheduleApp" ng-controller="mainController">
+
+
+        <form class='form'>
+            <h4>Sign Up</h4>
+
+            <div class="form-group">
+                <label form="email">Email</label>
+                <input type="text" ng-model='createEmail' class="form-control" id="email" placeholder="Enter a username..." required>
+            </div>
+            <div class="form-group">
+                <label form="password">Password</label>
+                <input type="text" ng-model='createPassword' class="form-control" id="password" placeholder="Choose a password..." required>
+            </div>
+            <button ng-click='createUser()' type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+
+
+
+    </div>
+</body>
+
+</html>
